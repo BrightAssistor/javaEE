@@ -22,7 +22,7 @@
     <!--映射文件：描述某个实体和数据库表的对应关系 -->
     <!--关联小配置 -->
     <mappers>
-        <mapper resource="com/dcits/dao/IStudentDao.xml" />
+        <mapper resource="./mappers/IStudentDao.xml" />
         <!--   <package name="cn.happy.dao"></package>-->
     </mappers>
 </configuration>

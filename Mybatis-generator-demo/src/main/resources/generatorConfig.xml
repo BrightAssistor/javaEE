@@ -65,6 +65,7 @@
         </javaClientGenerator>
             <!-- 配置表格映射 -->
         <table tableName="student"  domainObjectName="Student" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+        <table tableName="clazz"  domainObjectName="Clazz" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
     </context>
      <!-- 最后数据库建立表，然后执行eclipse  → run as  → maven build → Goals → mybatis-generator:generate -->
 </generatorConfiguration>

@@ -8,7 +8,7 @@ import org.apache.ibatis.cursor.Cursor;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
-import com.bristor.dao.IStudentDAO;
+import com.bristor.dao.StudentDao;
 import com.bristor.entity.Student;
 import com.bristor.utils.SessionUtils;
 
@@ -21,7 +21,7 @@ public class TestStudent {
     public void getAll(){
 		try {
 			SqlSession session = SessionUtils.getSqlSession();
-			IStudentDAO mapper = session.getMapper(IStudentDAO.class);
+			StudentDao mapper = session.getMapper(StudentDao.class);
 			List<Student> all = mapper.getAll();
 			session.commit();
 			session.close();
@@ -41,9 +41,12 @@ public class TestStudent {
     	try {
     		SqlSession session = SessionUtils.getSqlSession();
     		Student student=new Student();
-    		student.setName("关羽");
-    		int count = session.insert("com.bristor.dao.IStudentDAO.addStudent",student);
-    		System.out.println(count);
+    		student.setName("关羽333");
+//    		int count = session.insert("com.bristor.dao.IStudentDAO.addStudent",student);
+//    		System.out.println(count);
+    		StudentDao mapper = session.getMapper(StudentDao.class);
+    		int addStudent = mapper.addStudent(student);
+    		System.out.println(addStudent);
     		session.commit();
     		session.close();
 		} catch (Exception e) {

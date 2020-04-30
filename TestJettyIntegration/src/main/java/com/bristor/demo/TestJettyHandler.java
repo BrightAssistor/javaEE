@@ -16,7 +16,7 @@ public class TestJettyHandler extends AbstractHandler  {
 	public void handle(String target, Request baseRequest, HttpServletRequest request,
 			HttpServletResponse response) throws IOException, ServletException {
 		// TODO Auto-generated method stub
-		
+
 		System.out.println(target);
         response.setContentType("text/html; charset=utf-8");
         request.setCharacterEncoding("utf-8");
@@ -31,9 +31,11 @@ public class TestJettyHandler extends AbstractHandler  {
             out.print("<h3>hello jetty!</h3>");
             if(request.getParameter("name") != null) {
                 out.print(request.getParameter("name"));;
-		    
+
             }
         }
+//        request.getRequestDispatcher("index.html").forward(request, response);
+//        response.sendRedirect("index.html");
     }
 
 }

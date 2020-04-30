@@ -8,7 +8,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
-  <dependencies>
+ <!-- <dependencies>
   		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -45,7 +45,6 @@
 	    <artifactId>jetty-server</artifactId>
 	    <version>9.2.22.v20170606</version>
 	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-webapp -->
 	<dependency>
 	    <groupId>org.eclipse.jetty</groupId>
 	    <artifactId>jetty-webapp</artifactId>
@@ -56,5 +55,5 @@
     <artifactId>jetty</artifactId>
     <version>7.0.0.pre5</version>
 </dependency>
-  </dependencies>
+  </dependencies>-->
 </project>
